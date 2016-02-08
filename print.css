@@ -3,8 +3,9 @@
 	size: A4;
 	margin: 60mm 40mm 37mm 50mm;
 	@top-left {
-		content:url("cogneco-h2b.svg");
-		margin: 5mm 0 0 -28.5mm;
+		content:url("cogneco-h1b.svg");
+		margin: 25mm 0 0 -14mm;
+		vertical-align: top;
 	}
 	@top-right-corner {
 		font-family: "PT Sans", "Verdana", sans-serif;
@@ -21,6 +22,7 @@
 		font-weight: normal;
 		font-size: 8pt;
 		text-align: center;
+		vertical-align: top;
 		content: counter(page) " of " counter(pages);
 	}
 }
@@ -68,7 +70,7 @@ a[href^="http"] {
 span.footnote,
 a[href^="http"]:after {
 	float: footnote;
-	font: 10pt "Adobe Garamond Pro", "Garamond", "Georgia", serif;
+	font: 10pt "PT Serif", "Garamond", "Georgia", serif;
 	font-weight: normal;
 	text-indent: 0;
 }

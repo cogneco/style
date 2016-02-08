@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Mono|PT+Sans:400,400italic,700|PT+Serif:400,400italic,700|PT+Sans+Caption&subset=latin,latin-ext);
 html {
-	font: 10pt "Adobe Garamond Pro", "Garamond", "Georgia", serif;
+	font: 10pt "PT Serif", "Garamond", "Georgia", serif;
 	text-align: justify;
 }
 body {

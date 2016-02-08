@@ -13,11 +13,11 @@
 		content: "";
 		margin: 0 0 0 0;
 	}
-	@top {
-		content:url("cogneco-v6b.svg");
+	@top-center {
+		content:url("cogneco-v5b.svg");
 		vertical-align: bottom;
 	}
-	@bottom {
+	@bottom-center {
 		font-family: "PT Sans", "Verdana", sans-serif;
 		font-weight: normal;
 		font-size: 14pt;

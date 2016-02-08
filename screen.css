@@ -1,9 +1,9 @@
 @media screen {
 body {
-	margin: 50px 4cm 0 8cm;
+	margin: 40px 4cm 0 8cm;
 }
 header:before {
-	content:url("cogneco-v4b.svg");
+	content:url("cogneco-v3b.svg");
 	position: fixed;
 	left: 0;
 	top: 0;
