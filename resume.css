@@ -1,72 +1,69 @@
-@import url("base.css");
-@import url("screen.css") screen;
 @import url("resume-print.css") print;
-*:not(nav) > h1 {
-	font-size: 12pt;
-	margin: 20pt 0 12pt 0;
-	counter-reset: h2 h3 h4;
+@import url(https://fonts.googleapis.com/css?family=PT+Mono|PT+Sans:400,400italic,700|PT+Sans+Caption&subset=latin,latin-ext);
+html {
+	font: 10pt "PT Sans", "Garamond", "Georgia", serif;
+	text-align: justify;
 }
-h2 {
-	font-size: 11pt;
-	margin: 16pt 0 8pt 0;
-	counter-reset: h3 h4;
+header, h1, h2, h3, h4, h5, h6, nav {
+	font-family:"PT Sans Caption", "Verdana", sans-serif;
+	font-weight: normal;
+	page-break-after: avoid;
 }
-h3 {
-	font-size: 10pt;
-	margin: 16pt 0 8pt 0;
-	counter-reset: h4;
+header > h1 {
+	font-size: 2.6em;
+	text-align: left;
 }
-h4, h5 {
-	font-size: 10pt;
-	margin: 8pt 0 3pt 0;
+header > img {
+	max-width: 4cm;
+	max-height: auto;
+	position: absolute;
+	/*float: right;*/
+	right: 0;
+	top: -3cm;
 }
-header {
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
+section > h1 {
+	font-size: 1.4em;
+	margin-left: -4cm;
+/*	position: relative; */
+/*	left: -4cm;*/
+	border-bottom: solid 1px black;
 }
-h1 {
-	position: relative;
-	left: -5em;
+section > article > h2 {
+	font-size: 1.3em;
+	margin-bottom: 0.4em;
+	border-bottom: solid 1px black;
 }
-h2 {
-	position: relative;
-	left: -4em;
+section > article > p {
+	margin: 0;
+	margin-bottom: 0.2em;
 }
-h3 {
-	position: relative;
-	left: -2em;
+p.time {
+	font-style: italic;
 }
-body > #competence-profile + ul, /* competences list */
-body > h3#competences + ul { /* competences list */
+section > article > h3 {
+	font-size: 1.1em;
+	padding: 0;
+	margin: 0;
+	margin-top: 0.4em;
+	margin-bottom: 0.2em;
+}
+code {
+	font-family: "PT Mono", "Lucida Console", Monaco, monospace;
+}
+math {
+	display: block;
+	margin: 0.5ex 0 0.5ex 12%;
+	line-height: 2em;
+	text-align: left;
+}
+p > a.ref {
+	content: "[" target-counter(attr(href), reference) "]";
+}
+.competences {
 	column-count: 3;
 }
-body > h2 + p { /* dates */
-	padding-bottom: 0.5em;
-	font-size: 0.8em;
-	font-weight: bold;
-	font-family:"PT Sans", "Verdana", sans-serif;
-}
-p + p {
-	text-indent: 0;
-	margin-top: 0.4em;
-}
-body > h3 {
-	font-size: 1.0em;
-	margin-top: 1em;
-	margin-bottom: 0.1em;
-}
-body > h1:first-of-type {
-	text-align: center;
-	left: 0;
-	font-size: 16pt;
-	margin-top: -2.0em;
-}
-body > h2:first-of-type {
-	text-align: center;
-	left: 0;
-	margin-top: -0.4em;
-	margin-bottom: 0.4em;
-}
-body {
-	margin-top: 0;
+ul.competences {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	list-style-type: none;
 }
