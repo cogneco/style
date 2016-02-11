@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Mono|PT+Sans:400,400italic,700|PT+Sans+Caption&subset=latin,latin-ext);
 html {
 	font: 10pt "PT Sans", "Garamond", "Georgia", serif;
-	text-align: justify;
+	text-align: left;
 }
 header, h1, h2, h3, h4, h5, h6, nav {
 	font-family:"PT Sans Caption", "Verdana", sans-serif;
@@ -40,13 +40,6 @@ section > article > p {
 p.time {
 	font-style: italic;
 }
-section > article > h3 {
-	font-size: 1.1em;
-	padding: 0;
-	margin: 0;
-	margin-top: 0.4em;
-	margin-bottom: 0.2em;
-}
 code {
 	font-family: "PT Mono", "Lucida Console", Monaco, monospace;
 }
@@ -59,10 +52,32 @@ math {
 p > a.ref {
 	content: "[" target-counter(attr(href), reference) "]";
 }
-.competences {
-	column-count: 3;
+section > article > dl > dt,
+section > article > dl > dd {
+	display: inline;
+	padding: 0;
+	margin: 0;
+}
+section > article > dl > dt {
+	clear: both;
+}
+section > article > dl > dd + dd:before {
+	white-space: pre-wrap;
+	content: ", ";
+}
+section > article > dl > dt:after {
+	white-space: pre-wrap;
+	content: ": ";
+}
+section > article > dl > dd + dt:before {
+	white-space: pre;
+	content: "\a";
+}
+section > article {
+	clear: both;
 }
 ul.competences {
+	column-count: 3;
 	padding: 0 0 0 0;
 	margin: 0 0 0 0;
 	list-style-type: none;
