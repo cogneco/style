@@ -1,7 +1,7 @@
 @import url("base.css");
 @import url("screen.css") screen;
 @import url("document-print.css") print;
-*:not(nav) > h1:before {
+*:not(nav):not(header) > h1:before {
 	counter-increment: h1;
 	content: counter(h1);
 	float: left;

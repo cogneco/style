@@ -12,7 +12,7 @@ header, h1, h2, h3, h4, h5, h6, nav {
 	font-weight: normal;
 	page-break-after: avoid;
 }
-header {
+header > h1 {
 	font-size: 18pt;
 	padding: 40px 0 40px 0;
 	position: relative;
