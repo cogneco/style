@@ -10,6 +10,11 @@
 		"paragraph": "<p>${content}</p>\n",
 		"list item": "<li>${content}</li>\n",
 		"unordered list": "<ul>\n${content}</ul>\n",
-		"emphasize": "<em>${content}</em>"
+		"ordered list": "<ol>\n${content}</ol>\n",
+		"emphasize": "<em>${content}</em>",
+		"codeblock": "<pre><code>${content}</code></pre>",
+		"code": "<code>${content}</code>",
+		"link": "<a href='${target}'>${content}</a>",
+		"*": "<h1><code>${content}</code></h1>"
 	}
 }

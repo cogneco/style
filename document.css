@@ -1,47 +1,47 @@
 @import url("base.css");
 @import url("screen.css") screen;
 @import url("document-print.css") print;
-*:not(nav):not(header) > h1:before {
+body > h1:before {
 	counter-increment: h1;
 	content: counter(h1);
 	float: left;
 	width: 13mm;
 }
-*:not(nav) > h1 {
+body > h1 {
 	counter-reset: h2 h3 h4;
 }
 h1 {
 	font-size: 14pt;
 	margin: 46pt 0 28pt 0;
 }
-h2:before {
+body > h2:before {
 	counter-increment: h2;
 	content: counter(h1) "." counter(h2);
 	float: left;
 	width: 13mm;
 }
-h2 {
+body > h2 {
 	font-size: 12pt;
 	margin: 16pt 0 8pt 0;
 	counter-reset: h3 h4;
 }
-h3:before {
+body > h3:before {
 	counter-increment: h3;
 	content: counter(h1) "." counter(h2) "." counter(h3) " ";
 	float: left;
 	width: 13mm;
 }
-h3 {
+body > h3 {
 	font-size: 11pt;
 	counter-reset: h4;
 }
-h4:before {
+body > h4:before {
 	counter-increment: h4;
 	content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) " ";
 	float: left;
 	width: 13mm;
 }
-h4 {
+body > h4 {
 	font-size: 10pt;
 }
 #abstract:before {
