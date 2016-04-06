@@ -51,6 +51,10 @@ h1, h2, h3, h4, h5, h6, h7 {
 figure, table {
 	page-break-inside: avoid;
 }
+ul, ol, li {
+	page-break-before: avoid;
+	page-break-inside: avoid;
+}
 meta[name="author"] {
 	string-set: author attr(content);
 }
