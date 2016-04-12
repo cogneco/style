@@ -135,10 +135,10 @@ table tbody tr.separator {
 }
 table > caption {
 	font-style: italic;
-	caption-side:top;
+	caption-side: bottom;
 	margin:10pt 0 12pt 0;
 }
-table > caption:before{
+table > caption:before {
 	font-weight: bold;
 	content: "Table " counter(table) ": ";
 }
