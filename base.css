@@ -2,6 +2,7 @@
 html {
 	font: 10pt "PT Serif", "Garamond", "Georgia", serif;
 	text-align: justify;
+	line-height: 120%;
 }
 body {
 	counter-reset: h1 h2 h3 h4 table figure;

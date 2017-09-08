@@ -1,7 +1,7 @@
 @import url("print.css");
 @page:first {
 	size: A4;
-	margin: 100mm 40mm 37mm 50mm;
+	margin: 80mm 40mm 37mm 50mm;
  	@top-left {
 		content: "";
 		margin: 0 0 0 0;
@@ -31,4 +31,16 @@
 		text-align: center;
 		content: counter(page) " of " counter(pages);
 	}
+}
+header {
+	margin: 0;
+	padding: 0 0 1cm 0;
+}
+header > h1 {
+	margin: 0;
+	padding: 1cm 0;
+}
+header:after {
+	margin: 0;
+	padding: 0;
 }
