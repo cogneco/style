@@ -4,5 +4,5 @@
 	--logotype-top: url("logo/cogneco-h1b.svg");
 	--font-default: 10pt "PT Serif", "Garamond", "Georgia", serif;
 	--font-caption: "PT Sans Caption", "Verdana", sans-serif;
-	--font-monospace: "PT Mono", "Lucida Console", Monaco, monospace;
+	--font-monospace: 10pt "PT Mono", "Lucida Console", Monaco, monospace;
 }
