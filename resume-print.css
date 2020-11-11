@@ -2,7 +2,7 @@
 	size: A4;
 	margin: 50mm 20mm 40mm 60mm;
 	@top-left {
-		content:url("cogneco-h1b.svg");
+		content:url("logo/cogneco-h1b.svg");
 		margin: 25mm 0 0 -40mm;
 		vertical-align: top;
 	}
